@@ -7,35 +7,64 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Overpass:wght@300;400;600;700&display=swap"
- rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family
+=Josefin+Sans:wght@300;400;600&family=Overpass:wght@300;400;600;700&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 <body>
- 
-  <div id="header">
+
+
+   <!-- Logo -->
+  <div class="logo-div toggle">
     <img src="./images/logo.svg" alt="">
-    <!-- <h2> We're coming soon </h2> -->
   </div>
 
-  <div class="img-div">
-    <img src="./images/hero-mobile.jpg" alt="">
+
+ <div class="container">
+
+  <!-- header content -->
+    <div class="header main">
+        <!-- Logo -->
+  <div class="logo-div hidden">
+    <img src="./images/logo.svg" alt="">
   </div>
-   
-  <div class="coming-soon-header">
-    <h1>
-      <span> We're </span>
-      coming soon
-    </h1>
-  </div>
+     <div class="soon-header">
+      <h1><span>We're </span>coming soon</h1>
+     </div>
+      <div class="content-div">
+        <p >
+          Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+      </div>
 
-  We're coming soon
+    <!-- form -->
+    <form autocomplete="off">
+      <div>
+         <input type="email" name="email" id="email" placeholder="Email Address" required> 
+         <label for="email">
+         <img src="./images/icon-error.svg" alt="">
+          </label>
+         <button type="submit"><img src="./images/icon-arrow.svg" alt=""></button>
+      </div>
+      <p class="error">Please provide a valid email</p>
+      </form>
+    </div>
+ 
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+    <div class="header-img main">
+      <picture>
+        <source media="(min-width: 768px)" srcset="./images/hero-desktop.jpg">
+        <img src="./images/hero-mobile.jpg" alt="">
+      </picture>
+    </div>
+ </div>
+ 
+    
 
-  Email Address
    
   <footer>
     <p class="attribution">
@@ -43,5 +72,12 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
+
+  <script src="app.js " defer></script>
 </body>
 </html>
+
+
+
+
