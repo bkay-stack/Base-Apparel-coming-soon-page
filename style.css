@@ -86,12 +86,16 @@ span {
      line-height: 1.7;
 }
 
+/* Error message */
+
 .error {
     color: hsl(0, 93%, 68%);
     text-align: left; 
     margin: 0.4rem 0 0 0.7rem;
-   
+    display: none;
 }
+
+/* Form */
 
 form {
     position: relative;
@@ -117,8 +121,8 @@ form input::placeholder {
 
 form button {
     position: absolute;
-    top: 55%;
-    transform: translateY(-55%);
+    top: 1.9rem;
+    /* transform: translateY(-55%);  */
     right: -1rem;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border: none;
@@ -135,11 +139,17 @@ form button:hover {
 }
 
 
+/* Label img */
+
 form label img {
   position: absolute;
   left: 340px;
   top: 42px;
-  /* display: none; */
+
+}
+
+.error-img {
+    display: none;
 }
 
 
@@ -207,10 +217,12 @@ footer {
      margin-bottom: 14rem;
    }
 
+  /* form */
+
    form button {
        position: absolute;
-       top: 100%;
-       transform: translateY(-100%);
+       top: 1.8rem;
+       /* transform: translateY(-52%); */
        right: -0.5rem;
        background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
        border: none;
@@ -228,9 +240,7 @@ footer {
        /* display: none; */
      } 
 
-     .error {
-        display: none;
-     }
+    
 
 
 }
