@@ -9,11 +9,15 @@ const btn = document.querySelector('.btn');
 
 btn.addEventListener('click', (e) => {
     if (input.value === '') {
-        event.preventDefault();
+        e.preventDefault();
+        errorMesage.style.display = 'block';
+        errorImg.style.display = 'block';
         setTimeout(()=> {
-            errorMesage.style.display = 'block';
-            errorImg.style.display = 'block';
+            errorMesage.style.display = 'none';
+            errorImg.style.display = 'none';
         },1000)
+
+
     }
 
     
